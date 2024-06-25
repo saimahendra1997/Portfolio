@@ -1,0 +1,746 @@
+*
+{
+    margin: 0;
+    padding : 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+#header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/profile.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    position: relative;
+    object-fit: cover;
+}
+
+.container
+{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    width: 15%;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+}
+
+nav ul li a::after
+{
+    /* adding the hover effect on links of Home, about, Portifolio, Contact */
+    content: ''; /* if we add the content anything it would display under the links */
+    width: 0; /* if we add width before the hover the line will be added under the link*/
+    height: 3px; /* the height of the line */
+    background: #ff004f; /* adding the color of red hover */
+    position: absolute; /*absolute positioning moves an element relative to its nearest positioned ancesto*/
+    left: 0;/* The under line will not present left of the element */
+    bottom: -5px; /* the underline will present -5px below the element */
+    transition: 0.5s; /* the hover transition will be after 0.5 sec */
+
+}
+
+nav ul li a:hover::after
+{
+    width: 100%;
+}
+
+.header-text
+{
+    margin-top: 20%; /* Adding space from the top */
+    font-size: 30px; /* Changing the font size */
+
+}
+/*
+.header-text p{
+    font-size: 30px;
+    margin-top: auto;
+}
+*/
+
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #eb0832;
+}
+
+/*------------- About Section ------------------ */
+
+#about
+{
+    padding: 80px 0; /* 80px from top and bottom 0 from left and right */
+    color: #ababab;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .about-col-1
+ {
+    /* Now we are going to decide width for col 1 and col 2*/
+    flex-basis: 35%;
+ }
+ .about-col-1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+ }
+ .about-col-2
+ {
+    flex-basis: 60%;
+    /* we can clearly observe that in 1st col we mentioned 35% width but now we mentioned 60% width 
+    here 5% space between both the columns */
+    font-size: 15px;
+    line-height: 1.5
+    ;
+    text-align: justify;
+    word-wrap: break-word;
+
+ }
+
+
+ .sub-title
+ {
+    /* Changing the color text of the About section */
+    font-size: 40px;
+    font-weight: 200;
+    color: #ffff;
+ }
+
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px; /* 20px from top 0 from left and right 40px from the bottom */
+}
+.tab-links
+{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after
+{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f; /* adding the color of red hover */
+    position: absolute; /*absolute positioning moves an element relative to its nearest positioned ancesto*/
+    left: 0;/* The under line will not present left of the element */
+    bottom: -5px; /* the underline will present -5px below the element */
+    transition: 0.5s; 
+
+}
+
+.tab-links:hover:after,
+.tab-links.active-link:after 
+{
+    width: 100%;
+}
+
+table
+{
+    margin: 10px;
+    border-style: solid;
+    border-color: #760909;
+}
+
+table h2{
+    padding: 10px;
+}
+table tr td{
+        background-color: rgb(51, 204, 189);
+        color: #a12a2a;
+        text-align: center;
+}
+
+.experience-content .tab-contents ul li{
+
+    list-style: disc;
+    padding-top: 10px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.experience-content .tab-contents ul li span
+{
+    color: #26cab7;
+    font-size: 20px;
+}
+
+.education-content .tab-contents ul li{
+
+    list-style: disc;
+    margin-inline-start: 0px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.education-content .tab-contents ul li span{
+
+    color: #26cab7;
+    font-size: 20px;
+}
+
+.tab-contents
+{
+    display: none;
+}
+
+.tab-contents.active-tab
+{
+    display: block;
+}
+
+
+/* -------  Summary ----------*/
+
+#projects
+{
+    
+    padding: 30px 0;
+}
+
+.projects-list{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+.projects-list div{
+    background:  #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.projects-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.projects-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.projects-list div:hover{
+
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/*------ Portfolio ------- */
+
+#portfolio
+{
+    padding: 50px, 0;
+}
+
+.portfolio-list
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+    overflow-y: auto;
+}
+
+.layer
+{
+    width: 100%;
+    height:0;
+    background: linear-gradient(rgba(0,0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 15px;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    color: black;
+    font-weight: 25px;
+    margin-top: 15px;;
+    margin-bottom: 20px;
+}
+
+.layer ul li{
+    text-align: justify;
+    word-wrap: break-word;
+    color: rgb(214, 214, 214);
+}
+/*
+.layer a{
+    
+    margin-top: 20px;
+    margin-left: auto;
+    color: #00c3ff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 10%;
+    text-align: center;
+}
+*/
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+/*--------- Contact -----------*/
+
+.contact-left
+{
+    flex-basis: 35%;
+}
+
+.contact-right
+{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons
+{
+    margin-top: 30px;
+}
+
+.social-icons a{
+
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transform: transform 0.5s;
+}
+
+.social-icons a:hover
+{
+    color: #e25431;
+    transform: translateY(-5px);
+}
+
+.btn.btn2
+{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form
+{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*==================== Copyright ====================*/
+
+.copyright
+{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+/* ---------- Responsive for smaller screens -----------*/
+
+@media only screen and (max-width: 768px)
+{
+    .logo
+    {
+        width: 35%;
+        height: 35%;
+    }
+
+    #header
+    {
+        background-image: url(Images/Phonebackground.png);
+        background-attachment: scroll; /* Ensure it scrolls with content */
+        background-position: top 30%; /* Center horizontally and adjust vertical position */
+        background-size: cover; /* Ensure it covers the entire area */
+        height: 100vh; /* Full viewport height */
+    }
+ 
+    .header-text
+    {
+        position: absolute;
+        bottom: 20px; /* adjust the gap as needed */
+        left: 20%;
+        transform: translateX(-20%);
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .header-text h1
+    {
+        font-size: 30px;
+        margin: 0;
+    }
+    
+    .header-text p {
+        margin: 0 0 20px; /* add a margin of 20px below the <p> element */
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+
+
+    nav .fa-solid
+    {
+        display: block;
+        font-size: 25px;
+
+    }
+
+    nav ul
+    {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+
+    nav ul li
+    {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid
+    {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title
+    {
+        justify-content: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .about-col-1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 100%;
+    }
+
+    .about-col-1 img {
+        width: 170px;
+        height: 270px;
+        border-radius: 5%;
+        flex-basis: 100%;
+        object-fit: cover;
+      }
+
+    .about-col-2{
+        flex-basis: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .about-col-2 p {
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .tab-titles p{
+        font-size: larger;
+        text-align: justify;
+        font-weight: bold;
+      }
+
+      .skills-content-table {
+        width: 100%;
+        border-collapse: none;
+        margin-top: 20px;
+        margin-left: 5px;
+      }
+      
+      .skills-content-table th,
+      .skills-content-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+      }
+      
+      .skills-content-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+      
+        .skills-content-table {
+          font-size: 14px;
+        }
+      
+        .skills-content-table th,
+        .skills-content-table td {
+          padding: 8px;
+        }
+
+        .experience-content,
+        .education-content {
+        width: 100%;
+        margin-top: 20px;
+        }
+
+        .experience-content ul,
+        .education-content ul {
+        list-style: none;
+        }
+
+        .experience-content li,
+        .education-content li {
+        padding: 10px 0;
+        }
+
+        .experience-content li span,
+        .education-content li span {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .experience-content li,
+        .education-content li {
+            font-size: 15px;
+            display: block;
+            padding: 5px 0;
+        }
+
+        .experience-content li span,
+        .education-content li span {
+            font-size: 15px;
+            padding: auto;
+            display: block;
+        }
+        .experience-content p,
+        .education-content p {
+            margin-top: 5%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .projects-list div{
+            background:#262626;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .projects-list div:hover{
+            background: #ff004f;
+            transform: translateY(-10px);
+        }
+
+        .projects-list{
+            grid-template-columns: repeat(1, 1fr);
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .tab-links
+        {
+            justify-content: center;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        #contact .container {
+          height: auto;
+          padding: 10%;
+        }
+      
+        #contact .row {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        #contact .contact-left, #contact .contact-right {
+          width: 100%;
+          margin-right: 10px;
+        }
+      
+        #contact .contact-right form {
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        #contact input, #contact textarea {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+      
+        #contact .btn {
+          width: 100%;
+        }
+
+        .btn.btn2
+        {
+          text-align: center;
+        }
+        .copyright{
+            font-size: 14px;
+        }
+}
+
+#msg
+{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+}

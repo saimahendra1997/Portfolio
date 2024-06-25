@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99a28c3429.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" alt="Logo Image" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header"> Home </a></li>
+                <li> <a href="#about"> About </a></li>
+                <li> <a href="#projects"> Projects </a></li>
+                <li> <a href="#portfolio"> Portfolio </a></li>
+                <li> <a href="#contact"> Contact </a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Software Developer - Java </p>
+            <h1> Hi, I'm <span>Sai Mahendra</span> <br> Currently Working at Zyter TruCare </h1> 
+        </div>
+    </div>
+</div>
+<!--------- About Section ---------->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/About.png" alt="About Image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <br>
+          <p>
+            I'm Sai Mahendra Penumakula, a Computer Science graduate from Auburn University at Montgomery.
+            With a Bachelor's in Electronics and Communication Engineering from Sathyabhama Institute of 
+            Science and Technology, I've honed my skills in Java development over three years at Fidel 
+            Technology Solutions Ltd. Now at Zyter TruCare, I'm expanding my expertise in Java, Angular,
+            TypeScript, Microservices, T-SQL, SQL Server, Unit Tests, API Integration Tests and AWS, 
+            crafting innovative solutions for today's challenges.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</button>
+            <p class="tab-links" onclick="opentab('experience')">Experience</button>
+            <p class="tab-links" onclick="opentab('education')">Education</button>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <h2>Technical Skills</h2>
+            <table class="skills-content-table skills-content-striped skills-content-bordered skills-content-table-all">
+              <tr>
+                <td>Languages</td>
+                <td>Java, HTML, CSS, JavaScript, TypeScript</td>
+              </tr>
+              <tr>
+                <td>Frontend Frameworks/Libraries</td>
+                <td>Angular, React, jQuery, Bootstrap</td>
+              </tr>
+              <tr>
+                <td>Server-Side Backend Programming</td>
+                <td>JDBC, Spring, Hibernate, Spring Boot, 
+                    Spring Data JPA, RESTful Web Services, Spring MVC, SQL Server</td>
+              </tr>
+              <tr>
+                <td>Web Servers</td>
+                <td>Apache Tomcat, Node.js (used to build web servers)</td>
+              </tr>
+              <tr>
+                <td>Database Systems</td>
+                <td>MySQL, SQL, MongoDB, T-SQL </td>
+              </tr>
+              <tr>
+                <td>Oracle Technologies</td>
+                <td>BRM, OSB, OSM</td>
+              </tr>
+              <tr>
+                <td>Version Control Systems</td>
+                <td>Git</td>
+              </tr>
+              <tr>
+                <td>Tools</td>
+                <td>JUnit, Maven, GitHub, GitBash, JIRA</td>
+              </tr>
+              <tr>
+                <td>Cloud Technologies</td>
+                <td>AWS</td>
+              </tr>
+              <tr>
+                <td>IDE's</td>
+                <td>IntelliJ, Visual Studio Code, Eclipse, STS</td>
+              </tr>
+            </table>
+          </div>
+          <div class="experience-content">
+          <div class="tab-contents" id="experience">
+            <h2>Work Experience</h2>
+            <ul>
+              <li><span>April 2024 - Present</span><p>Software Developer - Zyter TruCare - Denton, Tx </p></li>
+              <li><span>May 2018 - October 2021 </span><p>Software Developer - Singtel Telecommunications Ltd - Chennai, India</p></li>
+            </ul>
+          </div>
+          </div>
+          <div class="education-content">
+          <div class="tab-contents" id="education">
+            <h2> Education </h2>
+            <ul>
+              <li><span>Sathyabama Institute of Science and Technology - Graduated 2018 </span><p>Bachelor's in Electronics and Communication Engineering </p></li>
+            </ul>
+            <ul>
+                <li><span>Auburn University At Montgomery - Graduated 2023 </span><p>Master's in Computer Science</p> </li>
+              </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!---------- Projects -------->
+
+  <div id="projects">
+    <div class="container">
+        <h1 class="project-title"> My Projects </h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-brands fa-angular"></i>
+                <h2> Employee Management </h2>
+                <p> Angular Spring CRUD Full Stack Project </p>
+                <a href="#" target="_blank"> Employee Management - In Progress </a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2> Login Form </h2>
+                <p> Application Login Form </p>
+                <a href="#" target="_blank"> In Progress </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------- Portfolio -------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Portfolio </h1>
+        <div class="portfolio-list">
+            <div class="work">
+                <img src="Images/Singtel.png" alt="Singtel Image">
+                <div class="layer">
+                    <h3> Singtel Telecommunications </h3>
+                        <ul>
+                            <li>  Configured BRM to handle 10,000 concurrent billing transactions per second, establishing a robust and scalable billing infrastructure.</li>
+                            <li>  Utilized Oracle Service Bus (OSB) for seamless service orchestration, managing interactions between BRM, Order and Service Management (OSM), and microservices.</li>
+                            <li>  Implemented modular microservices in Java and Spring Boot for user authentication, subscription management, invoicing, and payment processing, resulting in a 40% increase in development efficiency and reducing maintenance time by 25%.</li>
+                            <li>  Developed a responsive web-based user interface using React, HTML, and CSS, ensuring a user-friendly experience.</li>
+                            <li>  Employed Node.js with Express to build lightweight and scalable APIs, facilitating seamless communication between the front end and back end.</li>
+                            <li>  Utilized Java and Spring Boot for backend services, handling business logic, data processing, and integration with BRM and OSM.</li>
+                            <li>  Invoked a relational database to store customer data, billing information, and system configurations, ensuring rapid response times for billing queries.</li>
+                            <li>  Enhanced system scalability, hosting the application on Amazon EC2 instances, and maintaining optimal CPU utilization.</li>
+                            <li>  Leveraged AWS services such as RDS, S3, and Lambda for database hosting, asset storage, and serverless functions.</li>
+                            <li>  Streamlined build, test, and deployment processes, leading to a more agile and efficient development lifecycle.</li>
+                            <li>  Employed Git as the version control system for efficient source code management.</li>
+                            <li>  Actively monitored system performance with AWS CloudWatch, minimizing downtime and ensuring a seamless user experience.</li>
+                        </ul>
+                        <!---<a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>-->
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Zyter.png" alt="Zyter Image">
+            </div>
+        </div>
+        <a href="#" class="btn"> See More </a>
+    </div>
+</div>
+
+<!------------ Contact ------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me </h1>
+                <p><i class="fa-solid fa-envelope"></i> saimahipenumakula@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 334-462-2028 </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sai-penumakula-b89319294"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/mahimessi_7697/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://github.com/saimahendra1997"><i class="fa-brands fa-github"></i></a>    
+                </div>
+                <a href="Images/SAI MAHENDRA PENUMAKULA.docx" download class="btn btn2"> Download CV </a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2"> Submit </button>
+                </form>
+                <span id="msg">  </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright &copy; Sai Mahendra Penumakula. Made with <i class="fa-solid fa-heart"></i> HTML, CSS, JavaScript</p>
+    </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    document.getElementById(tabname).classList.add("active-tab");
+    document.querySelector('button[onclick="opentab(\'' + tabname + '\')"]').classList.add("active-link");
+    }
+
+  </script>
+
+  <script>
+     var sidemenu = document.getElementById("sidemenu");
+     function openmenu()
+     {
+        sidemenu.style.right = "0";
+     }
+     function closemenu()
+     {
+        sidemenu.style.right = "-200px";
+     }
+  </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyL8NHqN1AG9sto0RherMz4onAvZtIiltLoU1DoqpihjVvDmuLTuWHSaPYRbDlpOt907g/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => 
+        {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function()
+            {
+                msg.innerHTML=""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
