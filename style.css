@@ -679,6 +679,7 @@ nav .fa-solid{
             background:#262626;
             border-radius: 10px;
             margin-bottom: 20px;
+            transition: 0.5s;
         }
 
         .projects-list div:hover{
