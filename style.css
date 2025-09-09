@@ -303,6 +303,7 @@ table tr td{
     transform: translateY(-10px);
 }
 
+
 /*------ Portfolio ------- */
 
 #portfolio
@@ -697,15 +698,25 @@ nav .fa-solid{
         border-radius: 10px;
         margin-bottom: 20px;
         transition: 0.5s;
-        min-height: 250px;
+        min-height: 280px;
+        padding: 25px;
         }
-
+    
+        .projects-list div h2{
+            font-size: 22px;
+        }
+    
+        .projects-list div p{
+            font-size: 13px;
+            -webkit-line-clamp: 4; 
+        }
+    
         .projects-list div:hover{
             background: #333333;
             transform: translateY(-10px);
             transition: 0.5s;
         }
-        
+    
         .projects-list{
             grid-template-columns: repeat(1, 1fr);
             flex-direction: column;
@@ -713,8 +724,8 @@ nav .fa-solid{
         }
         
         .projects-list div a{
-            font-size: 15px;
-            padding: 10px 20px;
+            font-size: 14px;
+            padding: 8px 16px;
         }
 
         .tab-links
