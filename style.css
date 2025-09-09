@@ -704,49 +704,33 @@ nav .fa-solid{
         transition: 0.5s;
         min-height: 280px;
         padding: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .projects-list div h2{
-        font-size: 22px;
-        margin-bottom: 12px;
-        flex-shrink: 0;
-    }
-
-    .projects-list div p{
-        font-size: 13px;
-        margin-bottom: 25px; 
-        flex-grow: 1;
-    }
-
-    .projects-list div:hover{
-        background: #ff004f !important; 
-        transform: translateY(-10px);
-        transition: 0.5s;
-    }
+        }
     
-    .projects-list div:hover a{
-        background: rgba(255, 255, 255, 0.2) !important; 
-        color: #fff !important;
-        border: 2px solid #fff !important;
-    }
-
-    .projects-list{
-        grid-template-columns: repeat(1, 1fr);
-        flex-direction: column;
-        align-items: center;
-    }
+        .projects-list div h2{
+            font-size: 22px;
+        }
     
-    .projects-list div a{
-        font-size: 14px;
-        padding: 8px 16px;
-        margin-top: 15px; 
-        align-self: center;
-        width: fit-content;
-        flex-shrink: 0;
-    }
+        .projects-list div p{
+            font-size: 13px;
+        }
+    
+        .projects-list div:hover{
+            background: #333333;
+            transform: translateY(-10px);
+            transition: 0.5s;
+        }
+    
+        .projects-list{
+            grid-template-columns: repeat(1, 1fr);
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .projects-list div a{
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+    
         .tab-links
         {
             justify-content: center;
