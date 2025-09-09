@@ -303,35 +303,6 @@ table tr td{
     transform: translateY(-10px);
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 768px)
-{
-    .projects-list div{
-        background: #262626;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        transition: 0.5s;
-        min-height: 250px;
-    }
-
-    .projects-list div:hover{
-        background: #333333;
-        transform: translateY(-10px);
-        transition: 0.5s;
-    }
-
-    .projects-list{
-        grid-template-columns: repeat(1, 1fr);
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .projects-list div a{
-        font-size: 15px;
-        padding: 10px 20px;
-    }
-}
-
 /*------ Portfolio ------- */
 
 #portfolio
@@ -722,22 +693,28 @@ nav .fa-solid{
         }
         
         .projects-list div{
-            background:#262626;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            transition: 0.5s;
+        background: #262626;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: 0.5s;
+        min-height: 250px;
         }
 
         .projects-list div:hover{
-            background: #ff004f;
+            background: #333333;
             transform: translateY(-10px);
             transition: 0.5s;
         }
-
+        
         .projects-list{
             grid-template-columns: repeat(1, 1fr);
             flex-direction: column;
             align-items: center;
+        }
+        
+        .projects-list div a{
+            font-size: 15px;
+            padding: 10px 20px;
         }
 
         .tab-links
