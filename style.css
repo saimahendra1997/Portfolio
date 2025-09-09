@@ -566,7 +566,6 @@ nav .fa-solid{
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     }
 
-
     nav .fa-solid
     {
         display: block;
@@ -721,32 +720,38 @@ nav .fa-solid{
         transition: 0.5s;
         min-height: 280px;
         padding: 25px;
-        }
+    }
+
+    .projects-list div h2{
+        font-size: 22px;
+    }
+
+    .projects-list div p{
+        font-size: 13px;
+    }
+
+    .projects-list div:hover{
+        background: #ff004f !important; /* Ensured pink background with !important */
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
     
-        .projects-list div h2{
-            font-size: 22px;
-        }
+    .projects-list div:hover a{
+        background: rgba(255, 255, 255, 0.2) !important; /* Semi-transparent button on mobile card hover */
+        color: #fff !important;
+        border: 2px solid #fff !important;
+    }
+
+    .projects-list{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        align-items: center;
+    }
     
-        .projects-list div p{
-            font-size: 13px;
-        }
-    
-        .projects-list div:hover{
-            background: #ff004f; 
-            transform: translateY(-10px);
-            transition: 0.5s;
-        }
-    
-        .projects-list{
-            grid-template-columns: repeat(1, 1fr);
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .projects-list div a{
-            font-size: 14px;
-            padding: 8px 16px;
-        }
+    .projects-list div a{
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 
         .tab-links
         {
