@@ -286,7 +286,7 @@ table tr td{
     color: #fff;
     font-size: 15px;
     font-weight: 600;
-    margin-top: auto; /* This pushes the link to the bottom */
+    margin-top: 20px; /* Added top margin for extra gap */
     display: inline-block;
     background: #ff004f;
     padding: 10px 20px;
