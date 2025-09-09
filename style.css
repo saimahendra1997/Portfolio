@@ -519,7 +519,7 @@ nav .fa-solid{
        position: absolute;
        bottom: 20px;
        left: 3%; /* Further reduced to extend more to the right */
-       right: 18%; /* Increased right margin to push card more right */
+       right: 40%; /* Increased right margin to push card more right */
        transform: none;
        font-size: 23px;
        text-align: center;
