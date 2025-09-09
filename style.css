@@ -312,6 +312,7 @@ table tr td{
     transform: translateY(-10px);
 }
 
+
 /*------ Portfolio ------- */
 
 #portfolio
@@ -728,11 +729,10 @@ nav .fa-solid{
     
         .projects-list div p{
             font-size: 13px;
-            -webkit-line-clamp: 4; 
         }
     
         .projects-list div:hover{
-            background: #333333;
+            background: #ff004f; 
             transform: translateY(-10px);
             transition: 0.5s;
         }
